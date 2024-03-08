@@ -1,0 +1,93 @@
+body>.container:first-child {
+    margin-bottom: 80px;
+}
+
+.buynow {
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.muangay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.muangay:first-child {
+    justify-content: center;
+    align-items: start;
+}
+
+
+.hop {
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000a1;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+
+.image {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 5%;
+    /* left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    -ms-transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+
+.text {
+    background-color: hsla(0, 0%, 47%, .5);
+    color: white;
+    font-size: 16px;
+    padding: 8px 32px;
+}
+
+.hop:hover .overlay {
+    opacity: 0;
+}
+
+.hop:hover .text {
+    background-color: white;
+    color: #e5201a;
+    font-weight: bold;
+}
+
+.carousel-item {
+    /* display: flex; */
+    text-align: center;
+}
+
+.carousel-indicators {
+    position: relative;
+    background-color: #e5211a;
+    /* height: 100px; */
+    margin: 0 auto 1% auto;
+    width: 70%;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: auto;
+    width: auto;
+}
